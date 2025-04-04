@@ -3,6 +3,12 @@ require_once('Database.php');
 require_once('UserTable.php');
 require_once('UserLogic.php');
 require_once('userAction.php');
+require_once('optionPiker.php');
+
+$blood_types = optionPiker::bloodTypeOption();
+$factor = optionPiker::factorOption();
+$gender = optionPiker::genderOption();
+
 $errors = userAction::signup();
 ?>
 
@@ -34,17 +40,15 @@ $errors = userAction::signup();
                 </div>
                 <label for="blood_type" >Группа крови</label>
                     <select class="form-select" name="blood_type" id="blood_type">
-                        <option value  >Группа крови</option>                         
-                        <option value='0(I)' >0 (I)</option>
-                        <option value='A(II)' >A (II)</option>
-                        <option value='B(III)' >B (III)</option>
-                        <option value='AB(IV)' >AB (IV)</option>                    
+                        <?php foreach ($blood_types as $blood_type) {
+                               echo $blood_type;
+                            }?>                        
                     </select>               
                 <label for="factor" >Резус фактор</label>             
                 <select class="form-select" name="factor" id="factor">
-                    <option value  >Резус фактор</option>                         
-                    <option value='plus' >Положительный (+)</option>
-                    <option value='minus' >Отрицательный (-)</option>                                      
+                <?php  foreach ($factor as $factor_type) {
+                               echo $factor_type;
+                            }?>
                 </select>
                 <label for="vk" >Ссылка на профиль Вконтакте</label>
                 <div class="col-sm-12">
@@ -56,9 +60,9 @@ $errors = userAction::signup();
                 </div>
                 <label for="gender" >Пол</label>
                 <select class="form-select" name="gender" id="gender">
-                    <option value >Выбирите пол</option>                         
-                    <option value='male' >Мужской</option>
-                    <option value='female' >Женский</option>
+                    <?php  foreach ($gender as $gen) {
+                               echo $gen;
+                            }?>
                 </select>
                 <label for="interesting" >Интересы</label>
                 <div class="col-sm-12">
