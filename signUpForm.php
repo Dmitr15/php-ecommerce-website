@@ -35,10 +35,10 @@ $errors = userAction::signup();
                 <label for="blood_type" >Группа крови</label>
                     <select class="form-select" name="blood_type" id="blood_type">
                         <option value  >Группа крови</option>                         
-                        <option value='0 (I)' >0 (I)</option>
-                        <option value='A (II)' >A (II)</option>
-                        <option value='B (III)' >B (III)</option>
-                        <option value='AB (IV)' >AB (IV)</option>                    
+                        <option value='0(I)' >0 (I)</option>
+                        <option value='A(II)' >A (II)</option>
+                        <option value='B(III)' >B (III)</option>
+                        <option value='AB(IV)' >AB (IV)</option>                    
                     </select>               
                 <label for="factor" >Резус фактор</label>             
                 <select class="form-select" name="factor" id="factor">
@@ -62,7 +62,7 @@ $errors = userAction::signup();
                 </select>
                 <label for="interesting" >Интересы</label>
                 <div class="col-sm-12">
-                  <input type="text" id="interesting" class="form-control" name="interesting" placeholder="Ваши интересы" value="<?=htmlspecialchars($_POST["interestings"])?>">                  
+                  <input type="text" id="interesting" class="form-control" name="interesting" placeholder="Ваши интересы" value="<?=htmlspecialchars($_POST["interesting"])?>">                  
                 </div>
                 <label for="password" >Пароль</label>
                 <div class="col-sm-12">
