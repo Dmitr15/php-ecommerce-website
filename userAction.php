@@ -1,12 +1,10 @@
 <?php
 session_start();
-//include_once "UserTable.php";
 class userAction{
 
     //Вход в аккаунт
     public static function signIn(): string{
-        //echo $_SERVER['REQUEST_METHOD'];
-        //echo $_POST['action'];
+        
         if ('POST' != $_SERVER['REQUEST_METHOD']) {
             return '';
         }
