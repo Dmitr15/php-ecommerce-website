@@ -1,9 +1,8 @@
 <?php
 error_reporting(E_ERROR | E_PARSE);
-require_once('Database.php');
+
 session_start();
-require_once("UserLogic.php");
-require_once('UserTable.php');
+require_once("core.php");
 if ($_GET["clearFilter"] !='') {
     header("Location: http://localhost/Lr3Site/index.php");
 }
