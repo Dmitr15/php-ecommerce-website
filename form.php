@@ -1,14 +1,11 @@
 <?php
-require_once('formhandler.php');
-require_once('Database.php');
-require_once('UserTable.php');
-require_once('UserLogic.php');
-require_once('userAction.php');
+require_once("core.php");
 
 require_once("suppliers.php");
-
+require_once('formhandler.php');
+require_once("goods.php");
 $brands = Suppliers::get_all_suppliers();
-$all = userAction::select_goods();
+$all = goods::select_goods();
 ?>
 <div class="container mt-3">
             <form novalidate method="GET">
