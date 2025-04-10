@@ -2,9 +2,10 @@
 
 ## Original site: https://ferrumformat.com/catalog/sekcionnye-pochtovye-yaschiki?block=premium.1
 
-### Frontend: HTML/CSS and BOOTSTRAP
-### Backend: pure php
+### Frontend: HTML/CSS/JS and BOOTSTRAP
+### Backend: pure php 8.4.5
 ### Data Base: MySql via phpMySqlAdmin
+
 ## Features:
 ### 1)User registration and authentication
 ### 2)The product catalog is available only to verified users
