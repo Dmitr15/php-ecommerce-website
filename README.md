@@ -11,6 +11,11 @@
 ### 3)Filters selected by the user are saved when the page is reloaded
 ### 4)Fields in the user registration form validate the characters entered by the user
 
+## Installation
+### There are only two steps to run this website:
+#### 1. Download the project to the desired directory on your computer
+#### 2. Run php -S localhost:8080 on your terminal. Navigate to http://localhost:8080 to see the site.
+
 ## Main page
 ![image](https://github.com/user-attachments/assets/7535d1a9-bc7d-48dc-8bfe-a6ae47af746a)
 
